@@ -1,8 +1,25 @@
 aid: bloom-and-wild
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bloom-and-wild.png
 name: Bloom & Wild
-description: 'Bloom & Wild is a company surfaced as a portfolio company of general-catalyst, index-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Bloom & Wild is a UK-founded direct-to-consumer flower delivery and gifting company,
+  known for pioneering letterbox flowers that fit through a standard mail slot. Founded in 2013 and
+  headquartered in London, it operates across the UK and Europe under a family of brands including
+  Bloom & Wild, Bloomon and Bergamotte, offering one-off bouquets, plants, gifts and flower
+  subscriptions through its website and mobile apps. Backed by General Catalyst and Index Ventures,
+  it is a consumer e-commerce business rather than a public API provider; this profile captures its
+  public web, security and domain posture. It publishes a /.well-known/security.txt security contact
+  but no public developer program, OpenAPI, or API documentation was found.'
 url: https://raw.githubusercontent.com/api-evangelist/bloom-and-wild/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Flowers
+- Gifting
+- E-Commerce
+- Subscription
+- Delivery
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/bloom-and-wild-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/bloom-and-wild-domain-security.yml
+- type: Security
+  name: Security contact (security.txt)
+  url: well-known/bloom-and-wild-security.txt
+- type: SecurityTxt
+  url: well-known/bloom-and-wild-security.txt
+- type: WellKnown
+  url: well-known/bloom-and-wild-well-known.yml
 - type: Website
   url: https://www.bloomandwild.com
+- type: Support
+  name: Help Centre
+  url: https://www.bloomandwild.com/help
+- type: Blog
+  url: https://www.bloomandwild.com/the-blog
+- type: PrivacyPolicy
+  url: https://www.bloomandwild.com/privacy-statement
+- type: TermsOfService
+  url: https://www.bloomandwild.com/terms-and-privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
